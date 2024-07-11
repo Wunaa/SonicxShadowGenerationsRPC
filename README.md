@@ -12,7 +12,7 @@ Enhance your Discord status with themed updates for Sonic x Shadow Generations f
 
 2. Extract the downloaded ZIP file to a folder on your computer.
 
-3. Double-click the executable (`SonicxShadowGenerationsRPC.exe`) to run the Discord RPC.
+3. Double-click the executable (`Sonic X Shadow Generations.exe`) to run the Discord RPC.
 
 ## Usage
 
