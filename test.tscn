@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgg7f454hxsf5"]
+
+[ext_resource type="Script" path="res://discord.gd" id="1_dyjtq"]
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_dyjtq")
+actnumb = " "
+gamever = "Title Screen"
+
+[node name="Discord" type="Node" parent="."]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 194.0
+offset_top = 235.0
+offset_right = 296.0
+offset_bottom = 304.0
+text = "confirm"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 15.0
+offset_top = 123.0
+offset_right = 473.0
+offset_bottom = 161.0
+placeholder_text = "Stage"
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+offset_left = 15.0
+offset_top = 183.0
+offset_right = 473.0
+offset_bottom = 221.0
+placeholder_text = "Act"
+virtual_keyboard_type = 2
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 479.0
+offset_bottom = 104.0
+allow_reselect = true
+item_count = 3
+item_0/text = "Sonic Generations"
+item_1/text = "Shadow Generations"
+item_2/text = "Title Screen"
+
+[node name="CheckBox" type="CheckBox" parent="."]
+offset_left = 22.0
+offset_top = 253.0
+offset_right = 149.0
+offset_bottom = 284.0
+button_pressed = true
+text = "Not in Level?"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="item_selected" from="ItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="toggled" from="CheckBox" to="." method="_on_check_box_toggled"]

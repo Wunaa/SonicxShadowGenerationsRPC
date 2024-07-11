@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgg7f454hxsf5"]
+
+[ext_resource type="Script" path="res://discord.gd" id="1_dyjtq"]
+
+[node name="Test" type="Node2D"]
+
+[node name="Discord" type="Node" parent="."]
+script = ExtResource("1_dyjtq")
+state = "Fortnite"
+character_name = "Rebecca"
